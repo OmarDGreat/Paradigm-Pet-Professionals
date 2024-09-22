@@ -1,118 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me - Paradigm Pet Professionals</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/styles.css" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <img class="logo" src="assets/images/Logo.png" alt="Paradigm Pet Professionals Logo" />
-            <nav class="d-flex align-items-center justify-content-between w-100">
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Cats.html">Cats</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Dogs.html">Dogs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Birds.html">Birds</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="FAQ.html">FAQs</a></li>
-                            <li><a class="dropdown-item active" href="Contact.html">Contact Me</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex ms-auto" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Find something..." aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Fetch</button>
-                </form>
-            </nav>
-        </div>
+      <div class="container">
+        <img
+          class="logo"
+          src="assets/images/Logo.png"
+          alt="Paradigm Pet Professionals Logo"
+        />
+        <nav class="d-flex align-items-center justify-content-between w-100">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Cats.html">Cats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Dogs.html">Dogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Birds.html">Birds</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Services</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="FAQ.html">FAQs</a></li>
+                <li>
+                  <a class="dropdown-item active" href="Contact.html"
+                    >Contact Me</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Find something..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">Fetch</button>
+          </form>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <section class="intro">
-            <h1>Contact Us</h1>
-            <p class="italic-text">
-                Fill out the form below to request a virtual consultation with one of our Pexperts. We will get back to you within 48 hours.
-            </p>
-        </section>
+      <section class="intro">
+        <h1>Contact Us</h1>
+        <p class="italic-text">
+          Fill out the form below to request a virtual consultation with one of
+          our Pexperts. We will get back to you within 48 hours.
+        </p>
+      </section>
 
-        <section class="contact-form">
-            <form action="/submit-contact" method="POST" class="mx-auto" style="max-width: 600px;">
-                <div class="mb-3">
-                    <label for="name" class="form-label"><strong>Name:</strong></label>
-                    <input type="text" class="form-control" id="name" name="name" required aria-required="true">
-                </div>
-                <div class="mb-3">
-                    <label for="phone" class="form-label"><strong>Phone Number:</strong></label>
-                    <input type="tel" class="form-control" id="phone" name="phone" required aria-required="true">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label"><strong>Email Address:</strong></label>
-                    <input type="email" class="form-control" id="email" name="email" required aria-required="true">
-                </div>
-                <div class="mb-3">
-                    <label for="timezone" class="form-label"><strong>Time Zone:</strong></label>
-                    <select class="form-select" id="timezone" name="timezone" required aria-required="true">
-                        <option value="" disabled selected>Select Time Zone</option>
-                        <option value="PST">Pacific Standard Time (PST)</option>
-                        <option value="MST">Mountain Standard Time (MST)</option>
-                        <option value="CST">Central Standard Time (CST)</option>
-                        <option value="EST">Eastern Standard Time (EST)</option>
-                        <!-- Add more options as needed -->
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="petname" class="form-label"><strong>Pet's Name:</strong></label>
-                    <input type="text" class="form-control" id="petname" name="petname">
-                </div>
-                <div class="mb-3">
-                    <label for="pettype" class="form-label"><strong>Pet's Type:</strong></label>
-                    <select class="form-select" id="pettype" name="pettype" required aria-required="true">
-                        <option value="" disabled selected>Select Pet Type</option>
-                        <option value="dog">Dog</option>
-                        <option value="cat">Cat</option>
-                        <option value="bird">Bird</option>
-                        <option value="fish">Fish</option>
-                        <option value="small-animal">Small Animal</option>
-                        <!-- Add more options as needed -->
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="petage" class="form-label"><strong>Pet's Age:</strong></label>
-                    <input type="number" class="form-control" id="petage" name="petage" min="0" aria-describedby="petageHelp">
-                    <div id="petageHelp" class="form-text">Enter age in years.</div>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </section>
+      <section class="contact-form">
+        <form
+          action="/submit-contact"
+          method="POST"
+          class="mx-auto"
+          style="max-width: 600px"
+        >
+          <div class="mb-3">
+            <label for="name" class="form-label"><strong>Name:</strong></label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label"
+              ><strong>Phone Number:</strong></label
+            >
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              name="phone"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label"
+              ><strong>Email Address:</strong></label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="timezone" class="form-label"
+              ><strong>Time Zone:</strong></label
+            >
+            <select
+              class="form-select"
+              id="timezone"
+              name="timezone"
+              required
+              aria-required="true"
+            >
+              <option value="" disabled selected>Select Time Zone</option>
+              <option value="PST">Pacific Standard Time (PST)</option>
+              <option value="MST">Mountain Standard Time (MST)</option>
+              <option value="CST">Central Standard Time (CST)</option>
+              <option value="EST">Eastern Standard Time (EST)</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="petname" class="form-label"
+              ><strong>Pet's Name:</strong></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="petname"
+              name="petname"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="pettype" class="form-label"
+              ><strong>Pet's Type:</strong></label
+            >
+            <select
+              class="form-select"
+              id="pettype"
+              name="pettype"
+              required
+              aria-required="true"
+            >
+              <option value="" disabled selected>Select Pet Type</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="bird">Bird</option>
+              <option value="fish">Fish</option>
+              <option value="small-animal">Small Animal</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="petage" class="form-label"
+              ><strong>Pet's Age:</strong></label
+            >
+            <input
+              type="number"
+              class="form-control"
+              id="petage"
+              name="petage"
+              min="0"
+              aria-describedby="petageHelp"
+            />
+            <div id="petageHelp" class="form-text">Enter age in years.</div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#" aria-label="Facebook">Facebook</a></li>
-                <li><a href="#" aria-label="Instagram">Instagram</a></li>
-                <li><a href="#" aria-label="Twitter">Twitter</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <p>&copy; 2024 Paradigm Pet Professionals. All rights reserved.</p>
+        <ul class="social-links">
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Twitter">Twitter</a></li>
+        </ul>
+      </div>
     </footer>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
