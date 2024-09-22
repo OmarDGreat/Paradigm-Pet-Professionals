@@ -1,0 +1,253 @@
+/* =========================================
+   Paradigm Pet Professionals - styles.css
+   ========================================= */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #003B6D; /* Midnight Blue */
+    padding: 10px 0;
+    color: #fff;
+}
+
+.logo {
+    height: 80px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    margin-right: 10px; /* Spacing between navigation links */
+    color: white !important; /* Overrides Bootstrap's default styling */
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #6699CC !important; /* Blue Sky */
+    color: white !important;
+}
+
+.dropdown-menu {
+    background-color: #003B6D; /* Midnight Blue */
+    border: none;
+    border-radius: 0;
+    margin-top: 0;
+}
+
+.dropdown-item {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+    background-color: #6699CC; /* Blue Sky */
+    color: #fff;
+}
+
+/* Search Form Styling */
+form[role="search"] {
+    display: flex;
+    align-items: center;
+}
+
+form[role="search"] input[type="search"] {
+    border-radius: 4px;
+}
+
+form[role="search"] button {
+    border-radius: 4px;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px 0;
+}
+
+.intro, 
+.pet-categories, 
+.cat-care, 
+.cat-health, 
+.cat-behavior, 
+.dog-care, 
+.dog-grooming, 
+.dog-vaccinations, 
+.bird-description, 
+.bird-depression, 
+.bird-care, 
+.bird-social, 
+.faqs, 
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro .italic-text {
+    font-style: italic;
+    color: #676767; /* Dim Gray */
+}
+
+.pet-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pet-category {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.pet-category h2 {
+    color: #003B6D; /* Midnight Blue */
+    margin-bottom: 10px;
+}
+
+.pet-category .pet-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pet-category .pet-images img {
+    border-radius: 10px;
+    width: auto;
+    max-width: 150px;
+}
+
+/* Section Headings */
+section h3 {
+    color: #003B6D; /* Midnight Blue */
+    margin-bottom: 10px;
+}
+
+/* Lists */
+section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Image Styling */
+img.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003B6D; /* Midnight Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.social-links a:hover {
+    color: #6699CC; /* Blue Sky */
+}
+
+/* Horizontal Rules */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #BDBDBD; /* Silver */
+    margin: 20px 0;
+}
+
+/* Additional Typography */
+.italic-text {
+    font-style: italic;
+    color: #676767; /* Dim Gray */
+}
+
+strong {
+    color: #003B6D; /* Midnight Blue */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .pet-category {
+        width: 100%;
+    }
+
+    nav ul.nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav form[role="search"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
